@@ -1,0 +1,12 @@
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\bin\Debug\net9.0\Lab10.deps.json
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\bin\Debug\net9.0\Lab10.dll
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\bin\Debug\net9.0\Lab10.pdb
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\Lab10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\Lab10.AssemblyInfoInputs.cache
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\Lab10.AssemblyInfo.cs
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\Lab10.csproj.CoreCompileInputs.cache
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\Lab10.sourcelink.json
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\Lab10.dll
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\refint\Lab10.dll
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\Lab10.pdb
+C:\Users\HumbleIcarus\Documents\Programming 1410-1415\lab-10-polymorphic-drawing-factory-StrawmanDave\Lab10\obj\Debug\net9.0\ref\Lab10.dll
