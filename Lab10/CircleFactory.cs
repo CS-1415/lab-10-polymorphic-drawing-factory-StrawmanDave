@@ -1,8 +1,3 @@
-using System.Data.Common;
-using System.Reflection.Metadata.Ecma335;
-using System.Threading.Tasks.Dataflow;
-using System.Xml;
-
 namespace Lab10;
 
 public class CirlceFactory : IGrahic2DFactory
