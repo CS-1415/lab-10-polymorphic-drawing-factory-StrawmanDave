@@ -26,7 +26,7 @@ public class CirlceFactory : IGrahic2DFactory
             RadiusString = Console.ReadLine();
         }
         decimal RadiusDecimal = Convert.ToDecimal(RadiusString);
-        return new Circle(XDecimal, YDecimal, RadiusDecimal);
+        return new Circle(XDecimal, YDecimal, RadiusDecimal){ BackgroundColor = ConsoleColor.Green, ForegroundColor = ConsoleColor.Red, DisplayChar = ' '};
     }
     public static bool CanBeDecimal(string? Input)
     {

@@ -20,19 +20,21 @@ public class RectangleFactory : IGrahic2DFactory
             LeftString = Console.ReadLine();
         }
         decimal LeftDecimal = Convert.ToDecimal(LeftString);
+        Console.WriteLine("What would you like the height of the rectangle to be?");
         string? HeightString = Console.ReadLine();
         while(CanBeDecimal(HeightString) == false)
         {
             HeightString = Console.ReadLine();
         }
         decimal HeightDecimal = Convert.ToDecimal(HeightString);
+        Console.WriteLine("What would you like the width of the rectangle to be?");
         string? WidthString = Console.ReadLine();
         while (CanBeDecimal(WidthString) == false)
         {
             WidthString = Console.ReadLine();
         }
         decimal WidthDecimal = Convert.ToDecimal(WidthString);
-        return new Rectangle(LeftDecimal, TopDecimal, WidthDecimal, HeightDecimal);
+        return new Rectangle(LeftDecimal, TopDecimal, WidthDecimal, HeightDecimal){BackgroundColor = ConsoleColor.Red, ForegroundColor = ConsoleColor.Green, DisplayChar = ' '};
     }
 
     public static bool CanBeDecimal(string? Input)
