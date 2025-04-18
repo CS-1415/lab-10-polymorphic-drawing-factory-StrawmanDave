@@ -6,61 +6,40 @@ public class Circle : AbstractGraphic2D
     public decimal CenterY;
     public decimal Radius;
     
-    public override decimal LowerBoundX => CenterX - 2;
-    public override decimal UpperBoundX => CenterX + 2;
-    public override decimal LowerBoundY => CenterY - 2;
-    public override decimal UpperBoundY => CenterY + 2;
+    public override decimal LowerBoundX { get; protected set;}
+    public override decimal UpperBoundX { get; protected set;}
+    public override decimal LowerBoundY { get; protected set;}
+    public override decimal UpperBoundY { get; protected set;}
 
     public Circle(decimal x, decimal y, decimal radius)
     {
         CenterX = x;
         CenterY = y;
         Radius = radius;
+
+        if(CenterX - radius < 0)
+        {
+            LowerBoundX = 0;
+        }else
+        {
+            LowerBoundX = CenterX - Radius;
+        }
+
+        UpperBoundX = CenterX + Radius;
+
+        if(CenterY - Radius < 0)
+        {
+            LowerBoundY = 0;
+        }else
+        {
+            LowerBoundY = CenterY - Radius;
+        }
+
+        UpperBoundY = CenterY + Radius;
     }
 
     public override bool ContainsPoint(decimal x, decimal y)
     {
-        //For should not contain four corners
-        // if(LowerBoundX == x && LowerBoundY == y)
-        // {
-        //     return false;
-        // }
-        // if(UpperBoundX == x && LowerBoundY == y)
-        // {
-        //     return false;
-        // }
-        // if(LowerBoundX == x && UpperBoundY == y)
-        // {
-        //     return false;
-        // }
-        // if(UpperBoundX == x && UpperBoundY == y)
-        // {
-        //     return false;
-        // }
-
-        //For all points of the compass
-        if(LowerBoundX == x && CenterY == y)
-        { 
-            return true;
-        }
-        if(UpperBoundX == x && CenterY == y)
-        {
-            return true;
-        }
-        if(CenterX == x && LowerBoundY == y)
-        {
-            return true;
-        }
-        if(CenterX == x && UpperBoundY == y)
-        {
-            return true;
-        }
-
-        //For Center is included
-        if(CenterX == x && CenterY == y)
-        {
-            return true;
-        }
-        return false;
+        return (Math.Sqrt((double)((x-CenterX) * (x-CenterX) + (y-CenterY) * (y-CenterY))) <= (double)Radius);
     }
 }
